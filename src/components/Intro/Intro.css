@@ -1,0 +1,158 @@
+.intro{
+    display:flex;
+    height: 77vh;
+    margin-top:  6rem;
+
+}
+
+.i-left{
+        display: flex;
+        position: relative;
+        flex:1;
+        flex-direction: column;
+        gap: 2rem;
+}
+
+.i-name {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.i-name>:nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2.5rem;
+    
+}
+
+.i-name>:nth-child(2){
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: bold;
+   
+}
+
+.i-name>:nth-child(3){
+    font-weight: 400;
+    font-size: 18px;
+    color:var(--gray);
+    margin-top: 10px;
+
+}
+
+.i-button{
+    width: 6rem;
+    height:2rem;
+}
+
+.i-icons{
+    margin-top: 3rem;
+    display: flex;
+    gap: 0rem;
+
+}
+
+.i-icons>*{
+    transform: scale(0.5);
+}
+
+.i-icons>*:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+.i-right{
+    flex: 1;
+    position: relative;
+}
+
+.i-right>*{
+    position: absolute;
+    z-index:1;
+}
+
+.i-right>:nth-child(1){
+    transform: scale(0.69);
+    left: -13%;
+    top: -9%;
+    opacity: 20%;
+}
+
+.i-right>:nth-child(2){
+  top:-13.6%;
+  transform: scale(0.67);
+  left: -3rem;
+/* box-shadow: 10px 40px 100px 60px rgba(136, 4, 4, 0.42); */
+/* border-radius: 10% 10% 10% 10%; */
+color: rgb(179, 7, 22);
+}
+
+.i-right>:nth-child(3){
+    transform: scale(1);
+    z-index: 3;
+    opacity: 90%;
+    border-color: rgba(121, 72, 3, 0.42);
+    border-style: solid;
+    border-width: 20px;
+    right:15rem;
+    top:1rem;
+    height:15rem;
+    box-shadow: 10px 40px 100px 60px rgba(136, 4, 4, 0.42);
+}
+
+.i-right>:nth-child(4){
+    transform: rotate(180deg);
+    right: 1rem;
+    top: -5rem;
+    opacity: 80%;
+}
+
+.i-right>:nth-child(5){
+    top:3rem;
+    opacity: 80%;
+}
+
+.i-right>:nth-child(5){
+    top: -2rem;
+    opacity: 80%;
+}
+
+.i-right>:nth-child(6){
+    top: -5rem;
+    transform: rotate(30deg);
+    opacity: 70%;
+}
+
+.blur{
+    position: absolute;
+    height: 14rem;
+    width: 22rem;
+    border-radius: 50%;
+    background: #d9d0ff;
+    z-index: -9;
+    top:-18%;
+    left:56%;
+    filter: blur(72px);
+}
+
+@media screen and (max-width: 480px){
+    .intro{
+        flex-direction: column;
+        height: 64rem;
+        gap: 7rem;
+    }
+    .i-right{
+        transform:scale(0.8);
+        left :-3rem
+    }
+    .i-right .blur{
+        display: none;
+    }
+   .floating-div{
+    top:-7rem !important
+   }
+}
